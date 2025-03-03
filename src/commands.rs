@@ -3,7 +3,7 @@ use tauri::ipc::Channel;
 use tauri::{AppHandle, command, Runtime};
 
 use crate::models::*;
-use crate::error::*;
+use crate::error::Result;
 use crate::SherpaNcnnExt;
 
 #[command]
