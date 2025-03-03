@@ -1,0 +1,13 @@
+# Automatically generated - DO NOT EDIT!
+
+"$schema" = "../../schemas/schema.json"
+
+[[permission]]
+identifier = "allow-ncnn-start-recognize"
+description = "Enables the ncnn-start-recognize command without any pre-configured scope."
+commands.allow = ["ncnn-start-recognize"]
+
+[[permission]]
+identifier = "deny-ncnn-start-recognize"
+description = "Denies the ncnn-start-recognize command without any pre-configured scope."
+commands.deny = ["ncnn-start-recognize"]

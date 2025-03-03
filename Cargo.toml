@@ -1,0 +1,18 @@
+[package]
+name = "tauri-plugin-sherpa-ncnn"
+version = "0.1.1"
+authors = [ "TinyWang" ]
+description = "Real-time Speech recognition plugin for Tauri V2 Android."
+edition = "2021"
+rust-version = "1.77.2"
+exclude = ["/examples", "/dist-js", "/guest-js", "/node_modules"]
+links = "tauri-plugin-sherpa-ncnn"
+
+[dependencies]
+tauri = { version = "2.2.1" }
+serde = "1.0"
+thiserror = "2"
+serde_json = "1.0.137"
+
+[build-dependencies]
+tauri-plugin = { version = "2.0.3", features = ["build"] }
