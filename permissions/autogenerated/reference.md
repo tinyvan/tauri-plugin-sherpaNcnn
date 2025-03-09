@@ -3,6 +3,7 @@
 Default permissions for the plugin
 
 - `allow-ncnn-init-recognizer`
+- `allow-ncnn-init-recognizer-from-asset`
 - `allow-ncnn-init-microphone`
 - `allow-ncnn-start-recognize`
 - `allow-ncnn-stop-recognize`
