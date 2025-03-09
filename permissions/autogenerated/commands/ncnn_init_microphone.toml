@@ -1,0 +1,13 @@
+# Automatically generated - DO NOT EDIT!
+
+"$schema" = "../../schemas/schema.json"
+
+[[permission]]
+identifier = "allow-ncnn-init-microphone"
+description = "Enables the ncnn_init_microphone command without any pre-configured scope."
+commands.allow = ["ncnn_init_microphone"]
+
+[[permission]]
+identifier = "deny-ncnn-init-microphone"
+description = "Denies the ncnn_init_microphone command without any pre-configured scope."
+commands.deny = ["ncnn_init_microphone"]
