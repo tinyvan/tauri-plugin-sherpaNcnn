@@ -1,6 +1,6 @@
 {
   "name": "tauri-plugin-sherpa-ncnn-api",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "author": "TinyWang",
   "description": "Real-time Speech recognition plugin for Tauri V2 Android.",
   "type": "module",
