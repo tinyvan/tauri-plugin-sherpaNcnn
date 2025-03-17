@@ -104,7 +104,6 @@ class NcnnClient(private val activity: Activity) {
             val audioRecord=audioRecorder?.read(buffer,0,bufferSize)
             if(audioRecord!=null&&audioRecord>0)
             {
-
                 val samples=FloatArray(audioRecord){buffer[it]/32768.0f}
                 recognizer.acceptSamples(samples)
                 while(recognizer.isReady())
@@ -135,7 +134,7 @@ class NcnnClient(private val activity: Activity) {
                     Log.e(TAG, "NCNNClient.start: microphone cannot be initialized.", )
                 }
             }
-            Log.i(TAG, "state: ${audioRecorder?.state}")
+            //Log.i(TAG, "state: ${audioRecorder?.state}")
             audioRecorder!!.startRecording()
             isRecording=true
             recordingThread=thread(true){
@@ -149,7 +148,8 @@ class NcnnClient(private val activity: Activity) {
         isRecording=false
         audioRecorder.let {
             it?.stop()
-            it?.release()
         }
+        recognizer.reset()
+        //audioRecorder=null;
     }
 }

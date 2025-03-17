@@ -1,12 +1,12 @@
 <script setup lang="ts">
 import { ref } from "vue";
 import { invoke } from "@tauri-apps/api/core";
-import { ncnnInitMicrophone,ncnnInitRecognizer,ncnnStartRecognize,ncnnStopRecognize } from "tauri-plugin-sherpa-ncnn-api";
+import { ncnnInitMicrophone,ncnnInitRecognizer,ncnnInitRecognizerFromAsset,ncnnStartRecognize,ncnnStopRecognize } from "tauri-plugin-sherpa-ncnn-api";
 const init=()=>{
   ncnnInitMicrophone().then(()=>{
     console.log("MicroSuccess")
   })
-  ncnnInitRecognizer("sherpa-ncnn-streaming-zipformer-bilingual-zh-en-2023-02-13").then(()=>{
+  ncnnInitRecognizerFromAsset("sherpa-ncnn-streaming-zipformer-bilingual-zh-en-2023-02-13").then(()=>{
     console.log("RecogInitSuncess")
   })
 }

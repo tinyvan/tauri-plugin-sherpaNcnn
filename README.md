@@ -33,7 +33,7 @@ After build you will get shared library file in `build-..../install/lib` folder,
 | `NcnnInitRecognizer` | ✅ | ❌ | ❌ | ❌ | ❌ |
 | `NcnnInitRecognizerFromAsset` | ✅ | ❌ | ❌ | ❌ | ❌ |
 | `NcnnInitMicrophone`  | ✅ | ❌ | ❌ | ❌ | ❌ |
-| `NcnnStartRecognize` | ✅ | ❌ | ❌ | ❌ | ❌ |
+| `NcnnStartRecognize` x| ✅ | ❌ | ❌ | ❌ | ❌ |
 | `NcnnStopRecognize`  | ✅ | ❌ | ❌ | ❌ | ❌ |
 
 **说明/Notes:**
